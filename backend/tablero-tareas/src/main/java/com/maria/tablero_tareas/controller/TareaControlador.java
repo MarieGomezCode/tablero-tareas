@@ -11,6 +11,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/tareas")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 public class TareaControlador {
     private final TareaServicio servicio;

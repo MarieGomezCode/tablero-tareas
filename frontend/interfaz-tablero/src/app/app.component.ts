@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TableroComponent } from "./features/kanban/tablero.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TableroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

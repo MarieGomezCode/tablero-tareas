@@ -1,0 +1,19 @@
+<div class="tablero">
+  <div
+    class="columna"
+    *ngFor="let estado of ['POR_HACER', 'EN_PROGRESO', 'TERMINADA']"
+    cdkDropList
+    [cdkDropListData]="obtenerPorEstado(estado)"
+    (cdkDropListDropped)="cambiarEstado($event, estado)"
+  >
+    <h2>{{ estado }}</h2>
+    <div
+      class="tarea"
+      *ngFor="let tarea of obtenerPorEstado(estado)"
+      cdkDrag
+    >
+      <h3>{{ tarea.titulo }}</h3>
+      <p>{{ tarea.descripcion }}</p>
+    </div>
+  </div>
+</div>
