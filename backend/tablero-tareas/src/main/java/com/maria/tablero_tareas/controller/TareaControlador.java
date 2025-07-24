@@ -4,7 +4,7 @@ package com.maria.tablero_tareas.controller;
 import com.maria.tablero_tareas.model.Tarea;
 import com.maria.tablero_tareas.service.TareaServicio;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
